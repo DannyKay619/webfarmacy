@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <link rel="stylesheet" href="../static/Color.css">
+
+</head>
+<!-- === MODAL DE INICIO/REGISTRO === -->
+<div class="modal" id="modalLogin">
+  <div class="modal-content">
+    <span class="cerrar">&times;</span>
+    <h2 id="tituloModal">Iniciar Sesión</h2>
+
+    <!-- Formulario de inicio -->
+    <form id="form-login">
+      <input type="text" id="usuario" placeholder="Usuario" required><br>
+      <input type="password" id="clave" placeholder="Contraseña" required><br>
+      <button type="submit" class="boton">Entrar</button>
+    </form>
+
+    <!-- Formulario de registro -->
+    <form id="form-registro" style="display:none;">
+      <input type="text" id="nuevoUsuario" placeholder="Nuevo usuario" required><br>
+      <input type="password" id="nuevaClave" placeholder="Nueva contraseña" required><br>
+      <button type="submit" class="boton">Registrar</button>
+    </form>
+
+    <p id="alternarForm" style="cursor:pointer; color:#0099ff; text-decoration:underline; margin-top:1rem;">
+      ¿No tienes cuenta? Regístrate aquí
+    </p>
+  </div>
+</div>
+
+<body>
+  <!-- === ENCABEZADO === -->
+   
+  <header>
+    <img src="logo.png" alt="Logo de la empresa" width="300" />
+     <h1> ARCHER MEDICAL</h1>
+    <h2>Health and Care Company</h2>
+
+    <nav>
+       <button id="btn-login" class="nav-btn">Iniciar sesión / Registrarse</button>
+      <a href="productos.html" class="nav-btn">Nuestros productos</a>
+      <a href="sucursales.html" class="nav-btn">Sucursales</a>
+      <a href="nosotros.html" class="nav-btn">Nosotros</a>
+      <a href="https://wa.me/573154604936?text=Hola%2C%20quiero%20contactar%20a%20un%20asesor%20de%20la%20farmacia"
+         class="nav-btn" target="_blank">Contacto</a>
+        
+
+    </nav>
+  </header>
+
+  <!-- === CONTENIDO PRINCIPAL === -->
+  <main>
+    <section class="catalogo" id="catalogo">
+      <!-- Aquí puedes agregar tus productos dinámicamente más adelante -->
+    <h2 class="intro-productos">Novedades:</h2>
+    </section>
+
+    <!-- === NOSOTROS === -->
+    <section class="fondo-final" id="nosotros">
+      <h2>Nosotros:</h2>
+      <p>Adéntrate en nuestro sitio y ten a tu alcance tu farmacia de confianza en tu hogar.</p>
+      <p>Farmacia de visión y cuidado desde 2025</p>
+      <p><strong>Dirección:</strong> CR3B #15B -24 B/Vista.</p>
+      <p><strong>Ciudad:</strong> Cali, Colombia</p>
+      <p><strong>Teléfono:</strong> 315 4604936</p>
+    </section>
+
+    <!-- === CONTACTO === -->
+    <section id="contacto" class="barra">
+      
+      <p>La salud en tus manos: 
+        <a href="mailto:bilstrategic@hotmail.com">bilstrategic@hotmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- === PIE DE PÁGINA FINAL === -->
+  <footer class="barra">
+    <p>&copy; 2025 ArcherMedicalCompany. Todos los derechos reservados.</p>
+  </footer>
+
+
+<script src="../static/Farma.js"></script>
+</body>
+</html>
+
+
+
